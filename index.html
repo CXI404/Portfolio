@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+
+    <script>
+        // Check system preference on load
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark');
+        }
+
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark');
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 pt-20 dark:bg-gray-900 dark:text-white">
+
+    <!-- Navbar -->
+    <nav class="bg-white bg-opacity-90 backdrop-blur-md shadow-md py-4 px-8 flex justify-between items-center fixed w-full top-0 z-50 dark:bg-gray-800 dark:text-white">
+        <h1 class="text-2xl font-bold text-blue-600">My Portfolio</h1>
+        <ul class="flex space-x-6">
+            <li><a href="#about" class="hover:text-blue-600">About</a></li>
+            <li><a href="#cp" class="hover:text-blue-600">Competitive Programming</a></li>
+            <li><a href="#chess" class="hover:text-blue-600">Chess</a></li>
+            <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+            <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="bg-white bg-opacity-90 backdrop-blur-md shadow-md py-4 px-8 flex justify-between items-center fixed w-full top-0 z-50">
+        <h1 class="text-2xl font-bold text-blue-600">My Portfolio</h1>
+        <ul class="flex space-x-6">
+            <li><a href="#about" class="hover:text-blue-600">About</a></li>
+            <li><a href="#cp" class="hover:text-blue-600">Competitive Programming</a></li>
+            <li><a href="#chess" class="hover:text-blue-600">Chess</a></li>
+            <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+            <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+        <button onclick="toggleDarkMode()" class="text-blue-600 dark:text-white p-2 rounded-lg focus:outline-none">
+            🌙 / ☀️
+        </button>
+    </nav>
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I'm Prathamesh, a first-year student at Pimpri Chinchwad College of Engineering, studying Electronics and Telecommunications Engineering.</p>
+                <p>I have a deep passion for competitive programming, web development, and chess. I'm also enthusiastic about participating in hackathons and contributing to open-source projects.</p>
+                <p>My goal is to continuously improve my problem-solving skills and build meaningful projects that have a real-world impact.</p>
+            </div>
+            <div class="about-image">
+                <img src="your-image.jpg" alt="Prathamesh's photo">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Hero Section -->
+    <header class="hero text-center py-20">
+        <div class="hero-content">
+            <h1 class="text-4xl font-bold">Hi, I'm <span class="highlight text-blue-600">Prathamesh</span></h1>
+            <p class="mt-4 text-xl">A passionate programmer, competitive coder, and chess enthusiast.</p>
+            <a href="#about" class="btn mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700 transition">Know More</a>
+        </div>
+    </header>
+
+
+    <!-- Competitive Programming Section -->
+    <section id="cp" class="py-20 bg-white text-center dark:bg-gray-800 dark:text-white">
+        <h2 class="text-4xl font-bold text-gray-800 dark:text-white">Competitive Programming</h2>
+        <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">Solving problems on Codeforces, LeetCode, and more.</p>
+        <img src="images/cp.jpg" alt="Coding in CP contest" class="mt-6 mx-auto rounded-lg shadow-lg w-64">
+    </section>
+
+    <!-- Chess Section -->
+    <section id="chess" class="py-20 text-center bg-gray-50 dark:bg-gray-800 dark:text-white">
+        <h2 class="text-4xl font-bold text-gray-800 dark:text-white">Chess</h2>
+        <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">Playing tournaments and solving puzzles.</p>
+        <img src="images/chess.jpg" alt="Me playing chess" class="mt-6 mx-auto rounded-lg shadow-lg w-64">
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white text-center dark:bg-gray-800 dark:text-white">
+        <h2 class="text-4xl font-bold text-gray-800 dark:text-white">Projects</h2>
+        <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">A showcase of my coding projects.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 text-center bg-gray-50 dark:bg-gray-800 dark:text-white">
+        <h2 class="text-4xl font-bold text-gray-800 dark:text-white">Get in Touch</h2>
+        <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">Reach out to me for collaborations and discussions.</p>
+    </section>
+
+</body>
+</html>
