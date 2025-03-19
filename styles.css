@@ -177,3 +177,15 @@ section.show {
     opacity: 1;
     transform: translateY(0);
 }
+.dark {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.dark .navbar {
+    background-color: #000000;
+}
+
+.dark .navbar a {
+    color: #ffffff;
+}
